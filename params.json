@@ -1,0 +1,6 @@
+{
+  "name": "Tagging-system",
+  "tagline": "",
+  "body": "# Tagging-System\r\n\r\nA tagging-system used in search bars.\r\n\r\n* As soon as the user starts typing into it, an API is hit to show a list of suggestions. \r\n\r\n* When a particular suggestion item is clicked, it is added to selected items.\r\n\r\n* The user can also remove a particular selected item.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
