@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 	var data;
 	var names = [];
-	var k =0;
+	
 
 	// Get data from API and store name property in an array
 
@@ -57,9 +57,9 @@ $(document).ready(function(){
 
 	function tagIt (word) {
 
-		$("#tagList").append('<li><a class="tag">'+word+'<span id="close">x</span></a></li>');
+		$("#tagList").append('<li><a class="tag">'+word+'</a></li>');
 
-		k++;
+		// <span id="close">x</span>
 
 	}
 
@@ -73,8 +73,8 @@ $(document).ready(function(){
 
 	// Remove tag on click 
 
-	  $(".tag").click(function(){
-        $(this).hide();
+	  $("#btn").click(function(){
+        $(".tag").hide();
     });
 
 
