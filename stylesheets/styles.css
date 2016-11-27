@@ -1,0 +1,68 @@
+
+
+*{
+	box-sizing: border-box;
+}
+
+#wrapper {
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	text-align: center;
+
+}
+
+.input-field {
+	width: 30%;
+	margin: 10px;
+}
+
+#tagBox {
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+}
+
+#tagList {
+	list-style-type: none;
+	display: block;
+
+}
+
+.tag {
+
+	display: inline;
+	float: left;
+	margin-left: 5px;
+	padding: 6px 16px;
+	background: #C6C0C0;
+	font-size: 12px;
+	border-radius: 2px;
+	color: black;
+	cursor: default;
+
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#close {
+    
+    padding: 2px; 
+	margin: 2px;
+}
+
+#close:hover {
+	color: white;
+}
+
+#btn {
+
+	display:none;
+	margin: auto;
+	margin-top: 30px;
+
+}
