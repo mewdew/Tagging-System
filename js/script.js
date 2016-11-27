@@ -57,9 +57,7 @@ $(document).ready(function(){
 
 	function tagIt (word) {
 
-		$("#tagList").append('<li><a class="tag">'+word+'</a></li>');
-
-		// <span id="close">x</span>
+		$("#tagList").append('<li><a class="tag">'+word+'<span id="close">x</span></a></li>');
 
 	}
 
@@ -71,11 +69,21 @@ $(document).ready(function(){
 	}
 
 
-	// Remove tag on click 
+	// Remove tag on click
 
-	  $("#btn").click(function(){
+	$(document).on("click",".tag", function()   { 
+
+		$(this).hide();
+	});
+
+	//Hide all on clear
+
+	$("#btn").click(function(){
         $(".tag").hide();
+
     });
+
+
 
 
 
