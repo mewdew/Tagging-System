@@ -10,6 +10,7 @@ $(document).ready(function(){
 	var data;
 	var names = [];
 	var words = new trie();
+	words.isRoot = true;
 	
 
 	// Get data from API and store name property in an array
@@ -61,14 +62,15 @@ $(document).ready(function(){
 
 		 tagIt(typedWord);
 		 $("#dataList").empty();
-		 var indx = names.indexOf(typedWord);
-		 if (indx > -1){
-		 	names.splice(indx,1);
-		 }
-		 words = new trie();
-		 for(var j=0; j<names.length; j++) {
-		 	words.trieInsert(names[j],0);
-		 }
+		 words.trieRemove(typedWord, 0);
+		 // var indx = names.indexOf(typedWord);
+		 // if (indx > -1){
+		 // 	names.splice(indx,1);
+		 // }
+		 // words = new trie();
+		 // for(var j=0; j<names.length; j++) {
+		 // 	words.trieInsert(names[j],0);
+		 // }
 
 		$("#tags").val("");	
 	}
@@ -92,11 +94,11 @@ $(document).ready(function(){
 
 		var val = this.textContent;
 		words.trieInsert(val,0);
-		names.push(val);
-		words = new trie();
-		for(var j=0; j<names.length; j++) {
-		 	words.trieInsert(names[j],0);
-		}
+		// names.push(val);
+		// words = new trie();
+		// for(var j=0; j<names.length; j++) {
+		//  	words.trieInsert(names[j],0);
+		// }
 
 		$(this).hide();
 

@@ -1,4 +1,5 @@
 var trie = function () {
+	this.isRoot = false;
 	this.child = [];
 	this.isLeaf = false;
 	this.list = [];
@@ -87,7 +88,9 @@ trie.prototype.trieRemove = function (str,pos) {
 		 	  this.list.splice(indx,1);
 		 	}
 		 	if(this.list.length == 0){
-		 		this.isLeaf = true; 
+		 		if(!this.isRoot){
+		 			this.isLeaf = true; 
+		 		}
 		 		return true;
 		 	}
 		 	return false;
