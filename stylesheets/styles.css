@@ -4,12 +4,18 @@
 	box-sizing: border-box;
 }
 
+#box {
+
+	height: auto;
+}
+
 #wrapper {
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
 	text-align: center;
+	color: black;
 
 }
 
@@ -35,13 +41,14 @@
 
 	display: inline;
 	float: left;
-	margin-left: 5px;
+	margin: 5px;
 	padding: 6px 16px;
 	background: #C6C0C0;
 	font-size: 12px;
 	border-radius: 2px;
 	color: black;
 	cursor: default;
+	border-radius: 10%;
 
 }
 
@@ -66,3 +73,29 @@ a:hover {
 	margin-top: 30px;
 
 }
+
+#suggestList {
+	color: black;
+	display: block;
+	height: auto;
+	background-color: grey; 
+
+}
+
+option {
+	display: block;
+	color: black;
+	font-size: 20px;
+}
+
+.page-header {
+
+	margin: 0;
+}
+
+.main-content {
+
+	position: relative;
+	margin-top: 100px;
+}
+
