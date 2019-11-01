@@ -2,7 +2,7 @@
 
 A tagging-system used in search bars.
 
-* As soon as the user starts typing into it, an API is hit to show a list of suggestions. 
+* As soon as the user starts typing into it, an API [https://jsonplaceholder.typicode.com/users] is hit to show a list of suggestions. 
 
 * When a particular suggestion item is clicked, it is added to selected items.
 
