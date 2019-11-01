@@ -10,5 +10,9 @@ Demo: https://mewdew.github.io/Tagging-System/
 
 > The user can also remove a particular selected item.
 
+Note : 
+Case sensitive search [try typing 'K', 'L' to see suggestions]. 
+List being used: [https://jsonplaceholder.typicode.com/users]
+
 
 
